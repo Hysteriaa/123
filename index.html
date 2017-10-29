@@ -10,7 +10,7 @@
 <body>
     <div class="pin_keyboard">
         <div class="wrapper">
-            <input onkeypress="onlyNumbers(e)" type="text" id="pin_display" maxlength="12" placeholder="Введіть пін-код" >
+            <input type="text" id="pin_display" autocomplete="off" maxlength="12" placeholder="Введіть пін-код" pattern="[0-9]{1,12}" >
             <div class="keyboard">
                 <button value="1" onclick="getNumber(this.value)">1</button>
                 <button value="2" onclick="getNumber(this.value)">2</button>
@@ -30,7 +30,6 @@
             </div>  
         </div>   
     </div>
-    
     
     
     <script src="common.js"></script>

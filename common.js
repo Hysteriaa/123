@@ -20,6 +20,7 @@ function setClear(){
     display.value = '';
     display.setAttribute('type', 'text');
 };
+
 // Enter the output by alert()
 function setEnter(){
     var display = document.getElementById('pin_display');
@@ -40,11 +41,11 @@ function hidePin(){
 
 // Mix symbols in pin
 function mixPin(){
-    var first_value = display = document.getElementById('pin_display');
-    var enter_btn = document.getElementById('enter_btn');
+    var display = document.getElementById('pin_display');
     var arr = display.value.split('');
     arr.sort(compareRandom);
     display.value = arr.join('');
+    // if enter => alert(unmixed value(?))
 };
 
 function compareRandom() {
