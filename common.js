@@ -40,9 +40,15 @@ function hidePin(){
 
 // Mix symbols in pin
 function mixPin(){
-    var display = document.getElementById('pin_display');
+    var first_value = display = document.getElementById('pin_display');
     var enter_btn = document.getElementById('enter_btn');
     var arr = display.value.split('');
-    arr.reverse();
+    arr.sort(compareRandom);
     display.value = arr.join('');
 };
+
+function compareRandom() {
+    return Math.random() - 0.5;
+};
+
+  

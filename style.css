@@ -31,7 +31,6 @@
 .keyboard button:hover{
     cursor: pointer;
     background: -webkit-gradient(linear, 0 0, 0 100%, from(#f1f1ca), to(#91916e));
-    -webkit-transition: background-color 5s ease-out;
 }
 button.btn_hide,
 button.btn_mix{

@@ -10,7 +10,7 @@
 <body>
     <div class="pin_keyboard">
         <div class="wrapper">
-            <input onkeypress="onlyNumbers(e)" type="text" id="pin_display" maxlength="10" placeholder="Введіть пін-код" >
+            <input onkeypress="onlyNumbers(e)" type="text" id="pin_display" maxlength="12" placeholder="Введіть пін-код" >
             <div class="keyboard">
                 <button value="1" onclick="getNumber(this.value)">1</button>
                 <button value="2" onclick="getNumber(this.value)">2</button>
@@ -26,7 +26,7 @@
                 <button class="btn_mix" onclick="getNumber(mixPin())">Mix</button>
                 <button class="btn_cancel" onclick="getNumber(setCancel())">Cancel</button>
                 <button class="btn_clear" onclick="getNumber(setClear())">Clear</button>
-                <button class="btn_enter" onclick="getNumber(setEnter())" id="enter_btn">Enter</button>
+                <button class="btn_enter" onclick="getNumber(setEnter())">Enter</button>
             </div>  
         </div>   
     </div>
