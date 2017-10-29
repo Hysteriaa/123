@@ -1,0 +1,61 @@
+/* keyboard styles */
+.pin_keyboard {
+    width: 240px;
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(#8b8b54), to(#f5f4a8));
+    border: 1px solid #455A64;
+    border-radius: 4px;
+    padding-bottom: 20px;
+}
+#pin_display{
+    width: 180px;
+    height: 40px;
+    margin: 25px;
+    border-radius: 2px;
+    color:#313120;
+    padding-left: 6px;
+}
+.keyboard{
+    width: 190px;
+    padding: 0 25px 0 25px;
+}
+
+/* Buttons */
+.keyboard button{
+    height: 35px;
+    width: 55px;
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(#91916e), to(#f1f1ca));
+    border-radius: 5px;
+    margin: 2px;
+    color: #263238;
+}
+.keyboard button:hover{
+    cursor: pointer;
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(#f1f1ca), to(#91916e));
+    -webkit-transition: background-color 5s ease-out;
+}
+button.btn_hide,
+button.btn_mix{
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(#616161), to(#E0E0E0));
+}
+button.btn_hide:hover,
+button.btn_mix:hover{
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(#E0E0E0), to(#616161));
+}
+button.btn_cancel{
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(#E53935), to(#E57373));
+}
+button.btn_cancel:hover{
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(#E57373), to(#E53935));
+}
+button.btn_clear{
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(#FFB300), to(#FFD54F));
+}
+button.btn_clear:hover{
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(#FFD54F), to(#FFB300));
+}
+button.btn_enter{
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(#1B5E20), to(#4CAF50));
+}
+button.btn_enter:hover{
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(#4CAF50), to(#1B5E20));
+}
