@@ -21,6 +21,7 @@ function getNumber(value){
             display = document.getElementById('pin-display');
             if (display.value.length < 12 & i == value){
                 display.value += value;
+                hidden_display.value += value;
             };
         };
     }; 
