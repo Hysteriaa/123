@@ -10,7 +10,7 @@
 <body>
     <div class="pin-keyboard">
         <input type="text" id="pin-display" autocomplete="off" maxlength="12" placeholder="Введіть пін-код" disabled>
-        <input type="text" class="hidden" autocomplete="off" id="hidden-display" maxlength="12">
+        <input type="text" id="hidden-display" autocomplete="off" maxlength="12" class="hidden">
         <div class="keyboard">
             <button value="1" onclick="getNumber(this.value)">1</button>
             <button value="2" onclick="getNumber(this.value)">2</button>
@@ -27,7 +27,8 @@
             <button class="btn-cancel" onclick="setCancel()">Cancel</button>
             <button class="btn-clear" onclick="setClear()">Clear</button>
             <button class="btn-enter" onclick="setEnter()">Enter</button>
-            <label for="mix-box" class="mix-label"><input onclick="mixPin()" type="checkbox" name="mix-box"  id="mix-box">Змінювати символи при введенні (Mix)</label>
+            <label for="mix-box" class="mix-label"><input onclick="mixPin()" type="checkbox" name="mix-box" 
+                id="mix-box">Змінювати символи при введенні (Mix)</label>
         </div>    
     </div>
     
